@@ -1,0 +1,24 @@
+RewriteEngine On
+
+# Error
+ErrorDocument 404 /Theme/404.php
+
+# Router
+RewriteRule ^Router$ /Assets/Ajax/Router.php [L]
+
+# URL Users Login, Register
+RewriteRule ^home$ /Public/Client/Home.php [L]
+RewriteRule ^auth/login/$ /Public/Client/Login.php [L]
+RewriteRule ^auth/register/$ /Public/Client/Register.php [L]
+# admin
+
+# client
+RewriteRule ^profile/diary$ /Assets/Ajax/Diary.php [L]
+RewriteRule ^profile/logout/$ /Public/Client/Logout.php [L]
+RewriteRule ^website/create$ /Public/Client/CreateWebsite.php [L]
+RewriteRule ^profile/info$ /Public/Client/Information.php [L]
+RewriteRule ^recharge/banking$ /Public/Client/PaymentBank.php [L]
+RewriteRule ^recharge/card$ /Public/Client/PaymentCard.php [L]
+RewriteRule ^profile/history$ /Public/Client/History.php [L]
+RewriteRule ^profile/upgrade-level$ /Public/Client/upgrade_level.php [L]
+
